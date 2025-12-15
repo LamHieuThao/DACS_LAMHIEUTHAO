@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phát hiện Giọng DeepFake</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>
+    <span style="white-space: nowrap;">🎙️ Kiểm tra Giọng Nói Thật hay Giả 🤖</span>
+</h1>
+        {% if message %}
+            <p class="error">{{ message }}</p>
+        {% endif %}
+        <form method="POST" enctype="multipart/form-data">
+            <label for="audio_file" class="file-label">Chọn tệp .wav:</label>
+            <input type="file" name="audio_file" accept=".wav" required>
+            <button type="submit">🔍 Phân tích</button>
+        </form>
+    </div>
+</body>
+</html>

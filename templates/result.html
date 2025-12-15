@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="result-title">📢 Kết quả phân tích</h1>
+
+        <div class="result-box {{ 'real' if result == 'Giọng Thiệt' else 'fake' }}">
+            <p class="result-text">{{ result }}</p>
+        </div>
+
+        <div class="back-btn">
+            <a href="/" class="try-again">🔁 Thử lại với giọng khác 😺</a>
+        </div>
+    </div>
+</body>
+</html>

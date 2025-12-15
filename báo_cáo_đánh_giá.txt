@@ -1,0 +1,19 @@
+📋 Báo Cáo - Tập Huấn Luyện:
+              precision    recall  f1-score   support
+
+        Real       0.96      0.90      0.93        49
+        Fake       0.91      0.96      0.93        50
+
+    accuracy                           0.93        99
+   macro avg       0.93      0.93      0.93        99
+weighted avg       0.93      0.93      0.93        99
+
+📋 Báo Cáo - Tập Test Cân Bằng:
+              precision    recall  f1-score   support
+
+        Real       0.83      0.77      0.80        13
+        Fake       0.77      0.83      0.80        12
+
+    accuracy                           0.80        25
+   macro avg       0.80      0.80      0.80        25
+weighted avg       0.80      0.80      0.80        25
